@@ -138,11 +138,14 @@
 
       
 
-	  <!-- id 将作为查询条件 -->
+	  <!-- id 将作为查询条件 
 	  <span id="<Your/Path/Name>" class="leancloud_visitors" data-flag-title="菜饼的博客">
 			<em class="post-meta-item-text">阅读量 </em>
 			<i class="leancloud-visitors-count">1000000</i>
-	  </span>
+	  </span>-->
+	  <span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>次
+	 </span>
     </div>
   </header>
   
@@ -223,7 +226,10 @@
 </div>
 
         
-        <footer id="footer">
+        <span id="busuanzi_container_site_pv" style='display:none'>
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+</span>
+<footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2019 Lin BingXing
   </div>
@@ -313,6 +319,8 @@
         })
     </script>
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 
 </body>
 </html>
