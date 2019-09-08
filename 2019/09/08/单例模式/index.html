@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="饿汉模式饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static Singleton instance = new Singleton();    private Singleton()&amp;#123;&amp;#125;    public static Singleton getInstance()&amp;#123;        ret">
+    <meta name="description" content="学习单例模式的知识点总结  私有化构造器 保证线程安全 延迟加载 防止序列化和反序列化破坏单例 防御反射攻击单例  饿汉模式在类加载时就完成了初始化，所以类加载较慢，但获取对象的速度快。 这种方式基于类加载机制避免了多线程的同步问题。但是，没有启动延迟加载的效果。 饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static S">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单例模式">
-<meta property="og:url" content="http://yoursite.com/2019/09/08/单例模式/index.html">
+<meta property="og:url" content="https://linbingxing.github.io/2019/09/08/单例模式/index.html">
 <meta property="og:site_name" content="菜饼的博客">
-<meta property="og:description" content="饿汉模式饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static Singleton instance = new Singleton();    private Singleton()&amp;#123;&amp;#125;    public static Singleton getInstance()&amp;#123;        ret">
+<meta property="og:description" content="学习单例模式的知识点总结  私有化构造器 保证线程安全 延迟加载 防止序列化和反序列化破坏单例 防御反射攻击单例  饿汉模式在类加载时就完成了初始化，所以类加载较慢，但获取对象的速度快。 这种方式基于类加载机制避免了多线程的同步问题。但是，没有启动延迟加载的效果。 饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static S">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-08T07:04:15.984Z">
+<meta property="og:updated_time" content="2019-09-08T07:38:54.330Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单例模式">
-<meta name="twitter:description" content="饿汉模式饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static Singleton instance = new Singleton();    private Singleton()&amp;#123;&amp;#125;    public static Singleton getInstance()&amp;#123;        ret">
+<meta name="twitter:description" content="学习单例模式的知识点总结  私有化构造器 保证线程安全 延迟加载 防止序列化和反序列化破坏单例 防御反射攻击单例  饿汉模式在类加载时就完成了初始化，所以类加载较慢，但获取对象的速度快。 这种方式基于类加载机制避免了多线程的同步问题。但是，没有启动延迟加载的效果。 饿汉模式的代码如下: 1234567public class Singleton &amp;#123;    private static S">
     
     
         
@@ -91,16 +91,16 @@
     <br/>
     <div id="share" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/09/08/单例模式/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/09/08/单例模式/&text=单例模式"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/09/08/单例模式/&is_video=false&description=单例模式"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=单例模式&body=Check out this article: http://yoursite.com/2019/09/08/单例模式/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/09/08/单例模式/&name=单例模式&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://linbingxing.github.io/2019/09/08/单例模式/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://linbingxing.github.io/2019/09/08/单例模式/&text=单例模式"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://linbingxing.github.io/2019/09/08/单例模式/&is_video=false&description=单例模式"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=单例模式&body=Check out this article: https://linbingxing.github.io/2019/09/08/单例模式/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://linbingxing.github.io/2019/09/08/单例模式/&name=单例模式&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -144,38 +144,149 @@
     </div>
 
 
+	  <!-- id 将作为查询条件 -->
+	  <span id="菜饼的博客" class="leancloud_visitors" data-flag-title="菜饼的博客">
+			<em class="post-meta-item-text">阅读量 </em>
+			<i class="leancloud-visitors-count">1000000</i>
+	  </span>
     </div>
   </header>
   
 
   <div class="content" itemprop="articleBody">
-    <h1 id="饿汉模式"><a href="#饿汉模式" class="headerlink" title="饿汉模式"></a>饿汉模式</h1><p>饿汉模式的代码如下:</p>
+    <p>学习单例模式的知识点总结</p>
+<ul>
+<li>私有化构造器</li>
+<li>保证线程安全</li>
+<li>延迟加载</li>
+<li>防止序列化和反序列化破坏单例</li>
+<li>防御反射攻击单例</li>
+</ul>
+<h1 id="饿汉模式"><a href="#饿汉模式" class="headerlink" title="饿汉模式"></a>饿汉模式</h1><p>在类加载时就完成了初始化，所以类加载较慢，但获取对象的速度快。 这种方式基于类加载机制避免了多线程的同步问题。但是，没有启动延迟加载的效果。</p>
+<p>饿汉模式的代码如下:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance = <span class="keyword">new</span> Singleton();</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> instance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="懒汉模式（线程不安全）"><a href="#懒汉模式（线程不安全）" class="headerlink" title="懒汉模式（线程不安全）"></a>懒汉模式（线程不安全）</h1><p>懒汉模式的代码如下:</p>
+<h1 id="懒汉模式（线程不安全）"><a href="#懒汉模式（线程不安全）" class="headerlink" title="懒汉模式（线程不安全）"></a>懒汉模式（线程不安全）</h1><p>懒汉模式申明了一个静态对象，在用户第一次调用时初始化，虽然节约了资源，但第一次加载时需要实例化，反映稍慢一些，而且在多线程不能正常工作。</p>
+<p>懒汉模式的代码如下:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;  </span><br><span class="line">          instance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">      &#125;  </span><br><span class="line">      <span class="keyword">return</span> instance;  </span><br><span class="line">      &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="懒汉模式（线程安全）"><a href="#懒汉模式（线程安全）" class="headerlink" title="懒汉模式（线程安全）"></a>懒汉模式（线程安全）</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;  </span><br><span class="line">          instance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">      &#125;  </span><br><span class="line">      <span class="keyword">return</span> instance;  </span><br><span class="line">      &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="懒汉模式（线程安全）"><a href="#懒汉模式（线程安全）" class="headerlink" title="懒汉模式（线程安全）"></a>懒汉模式（线程安全）</h1><p>这种写法能够在多线程中很好的工作，但是每次调用getInstance方法时都需要进行同步，造成不必要的同步开销，而且大部分时候我们是用不到同步的，所以不建议用这种模式。</p>
+<p>懒汉模式（线程安全）的代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">private</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">if</span> (instance == <span class="keyword">null</span>) &#123;  </span><br><span class="line">          instance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">      &#125;  </span><br><span class="line">      <span class="keyword">return</span> instance;  </span><br><span class="line">      &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="双重检查模式-（DCL）"><a href="#双重检查模式-（DCL）" class="headerlink" title="双重检查模式 （DCL）"></a>双重检查模式 （DCL）</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">      &#125;   </span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">if</span> (instance== <span class="keyword">null</span>) &#123;  </span><br><span class="line">          <span class="keyword">synchronized</span> (Singleton.class) &#123;  </span><br><span class="line">          <span class="keyword">if</span> (instance== <span class="keyword">null</span>) &#123;  </span><br><span class="line">              instance= <span class="keyword">new</span> Singleton();  </span><br><span class="line">          &#125;  </span><br><span class="line">         &#125;  </span><br><span class="line">     &#125;  </span><br><span class="line">     <span class="keyword">return</span> singleton;  </span><br><span class="line">     &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h1 id="双重检查模式-（DCL）"><a href="#双重检查模式-（DCL）" class="headerlink" title="双重检查模式 （DCL）"></a>双重检查模式 （DCL）</h1><p>这种写法在getSingleton方法中对singleton进行了两次判空，第一次是为了不必要的同步，第二次是在singleton等于null的情况下才创建实例，利用关键字volatile特性来实现</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">static</span> Singleton instance;  </span><br><span class="line">      <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span> <span class="params">()</span></span>&#123;</span><br><span class="line">      &#125;   </span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">      <span class="keyword">if</span> (instance== <span class="keyword">null</span>) &#123;  </span><br><span class="line">          <span class="keyword">synchronized</span> (Singleton.class) &#123;  </span><br><span class="line">          <span class="keyword">if</span> (instance== <span class="keyword">null</span>) &#123;  </span><br><span class="line">              instance= <span class="keyword">new</span> Singleton();  </span><br><span class="line">          &#125;  </span><br><span class="line">         &#125;  </span><br><span class="line">     &#125;  </span><br><span class="line">     <span class="keyword">return</span> singleton;  </span><br><span class="line">     &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="静态内部类单例模式"><a href="#静态内部类单例模式" class="headerlink" title="静态内部类单例模式"></a>静态内部类单例模式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> SingletonHolder.sInstance;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span> </span>&#123;  </span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton sInstance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="静态内部类单例模式"><a href="#静态内部类单例模式" class="headerlink" title="静态内部类单例模式"></a>静态内部类单例模式</h1><p>第一次加载Singleton类时并不会初始化sInstance，只有第一次调用getInstance方法时虚拟机加载SingletonHolder 并初始化sInstance ，这样不仅能确保线程安全也能保证Singleton类的唯一性，所以推荐使用静态内部类单例模式。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123; </span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span></span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;  </span><br><span class="line">        <span class="keyword">return</span> SingletonHolder.sInstance;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonHolder</span> </span>&#123;  </span><br><span class="line">        <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton sInstance = <span class="keyword">new</span> Singleton();  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="枚举单例"><a href="#枚举单例" class="headerlink" title="枚举单例"></a>枚举单例</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton &#123;  </span><br><span class="line">     INSTANCE;  </span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doSomeThing</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">     &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>上述讲的几种单例模式实现中，有一种情况下他们会重新创建对象，那就是反序列化，将一个单例实例对象写到磁盘再读回来，从而获得了一个实例。反序列化操作提供了readResolve方法，这个方法可以让开发人员控制对象的反序列化。在上述的几个方法示例中如果要杜绝单例对象被反序列化是重新生成对象，就必须加入如下方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> Object <span class="title">readResolve</span><span class="params">()</span> <span class="keyword">throws</span> ObjectStreamException</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> singleton;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="使用容器实现单例模式"><a href="#使用容器实现单例模式" class="headerlink" title="使用容器实现单例模式"></a>使用容器实现单例模式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonManager</span> </span>&#123; </span><br><span class="line">　　<span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, Object&gt; objMap = <span class="keyword">new</span> HashMap&lt;String,Object&gt;();</span><br><span class="line">　　<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123; </span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">registerService</span><span class="params">(String key, Objectinstance)</span> </span>&#123;</span><br><span class="line">　　　　<span class="keyword">if</span> (!objMap.containsKey(key) ) &#123;</span><br><span class="line">　　　　　　objMap.put(key, instance) ;</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="title">ObjectgetService</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">　　　　<span class="keyword">return</span> objMap.get(key) ;</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="枚举单例"><a href="#枚举单例" class="headerlink" title="枚举单例"></a>枚举单例</h1><p>默认枚举实例的创建是线程安全的，并且在任何情况下都是单例。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> Singleton &#123;  </span><br><span class="line">     INSTANCE;  </span><br><span class="line">     <span class="keyword">private</span> Object data;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setData</span><span class="params">(Object data)</span></span>&#123;</span><br><span class="line">         <span class="keyword">this</span>.data =data;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> Object <span class="title">getData</span><span class="params">()</span></span>&#123;</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">this</span>.data;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="function"><span class="keyword">public</span> Singleton <span class="title">getInstance</span><span class="params">()</span> </span>&#123;  </span><br><span class="line">         <span class="keyword">return</span> INSTANCE;</span><br><span class="line">     &#125;  </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="ThreadLocal单例模式"><a href="#ThreadLocal单例模式" class="headerlink" title="ThreadLocal单例模式"></a>ThreadLocal单例模式</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalSingleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ThreadLocal&lt;ThreadLocalSingleton&gt; threadLocalInstance = <span class="keyword">new</span> 			ThreadLocal&lt;ThreadLocalSingleton&gt;()&#123;</span><br><span class="line">       		 <span class="meta">@Override</span></span><br><span class="line">       		 <span class="function"><span class="keyword">protected</span> ThreadLocalSingleton <span class="title">initalValue</span><span class="params">()</span></span>&#123;</span><br><span class="line">            		<span class="keyword">return</span> <span class="keyword">new</span> ThreadLocalSingleton();</span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ThreadLocalSingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">   		 <span class="keyword">return</span> threadLocalInstance.get();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="使用容器实现单例模式"><a href="#使用容器实现单例模式" class="headerlink" title="使用容器实现单例模式"></a>使用容器实现单例模式</h1><p>使用容器方式，利用Map来实现对多个单例进行管理，在使用时可以通过统一的接口进行获取操作，降低了用户的使用成本，也对用户隐藏了具体实现，降低了耦合度。Spring在管理bean实例时，就是利用容器单例模式来实现。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SingletonManager</span> </span>&#123; </span><br><span class="line">　　<span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, Object&gt; objMap = <span class="keyword">new</span> ConcurrentHashMap&lt;String,Object&gt;();</span><br><span class="line">　　<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123; </span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> <span class="keyword">void</span> <span class="title">registerService</span><span class="params">(String key, Objectinstance)</span> </span>&#123;</span><br><span class="line">　　　　<span class="keyword">if</span> (!objMap.containsKey(key) ) &#123;</span><br><span class="line">　　　　　　objMap.put(key, instance) ;</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">　　<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="title">ObjectgetService</span><span class="params">(String key)</span> </span>&#123;</span><br><span class="line">　　　　<span class="keyword">return</span> objMap.get(key) ;</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h1 id="ThreadLocal单例模式"><a href="#ThreadLocal单例模式" class="headerlink" title="ThreadLocal单例模式"></a>ThreadLocal单例模式</h1><p>利用ThreadLocal原理来保证线程内安全，在我们实现多数据动态源可以用到。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreadLocalSingleton</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> ThreadLocal&lt;ThreadLocalSingleton&gt; threadLocalInstance = <span class="keyword">new</span> 			ThreadLocal&lt;ThreadLocalSingleton&gt;()&#123;</span><br><span class="line">       		 <span class="meta">@Override</span></span><br><span class="line">       		 <span class="function"><span class="keyword">protected</span> ThreadLocalSingleton <span class="title">initalValue</span><span class="params">()</span></span>&#123;</span><br><span class="line">            		<span class="keyword">return</span> <span class="keyword">new</span> ThreadLocalSingleton();</span><br><span class="line">        	&#125;</span><br><span class="line">        &#125;</span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ThreadLocalSingleton <span class="title">getInstance</span><span class="params">()</span></span>&#123;</span><br><span class="line">   		 <span class="keyword">return</span> threadLocalInstance.get();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>综合上面几种实现方式，针对单例模式需要考虑的几种因素进行对比</p>
+<table>
+<thead>
+<tr>
+<th>实现方式</th>
+<th><strong>线程安全</strong></th>
+<th><strong>并发性能好</strong></th>
+<th><strong>延迟加载</strong></th>
+<th><strong>序列化/反序列化安全</strong></th>
+<th><strong>抵御反射攻击</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>饿汉式</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>懒汉式</td>
+<td></td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>懒汉式加锁</td>
+<td>Y</td>
+<td></td>
+<td>Y</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DCL</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>静态内部类</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>枚举</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>容器加锁</td>
+<td>Y</td>
+<td>Y</td>
+<td>Y</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
 
   </div>
 </article>
 
-    <div class="blog-post-comments">
-        <div id="disqus_thread">
-            <noscript>加载评论需要在浏览器启用 JavaScript 脚本支持。</noscript>
-        </div>
-    </div>
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments" class="blog-post-comments"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            visitor: true,
+            appId: 'zW8M5xWk2J0zu6kNr9vwig2x-gzGzoHsz',
+            appKey: 'SNhWlkymItSMrzg2VxBXsiNx',
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+            avatar: 'robohash'
+        })
+    </script>
 
 
 
@@ -207,16 +318,16 @@
 
     <div id="share-footer" style="display: none">
       <ul>
-  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2019/09/08/单例模式/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2019/09/08/单例模式/&text=单例模式"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2019/09/08/单例模式/&is_video=false&description=单例模式"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=单例模式&body=Check out this article: http://yoursite.com/2019/09/08/单例模式/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2019/09/08/单例模式/&name=单例模式&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://linbingxing.github.io/2019/09/08/单例模式/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=https://linbingxing.github.io/2019/09/08/单例模式/&text=单例模式"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://linbingxing.github.io/2019/09/08/单例模式/&is_video=false&description=单例模式"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=单例模式&body=Check out this article: https://linbingxing.github.io/2019/09/08/单例模式/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=https://linbingxing.github.io/2019/09/08/单例模式/&title=单例模式"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://linbingxing.github.io/2019/09/08/单例模式/&name=单例模式&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -295,19 +406,17 @@
 
 <!-- Baidu Analytics -->
 
-<!-- Disqus Comments -->
-
     <script type="text/javascript">
-        var disqus_shortname = 'SITENAME';
-
-        (function(){
-            var dsq = document.createElement('script');
-            dsq.type = 'text/javascript';
-            dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }());
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?7ee03781192ba9ea60b2f43d4df03ed3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
+
+<!-- Disqus Comments -->
 
 
 </body>
