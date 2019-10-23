@@ -55,19 +55,19 @@
   };
 </script>
 
-  <meta name="description" content="1、软件设计原则 开闭原则 单一职责原则 依赖倒置原则 接口隔离原则 迪米特法则 里氏替换原则 合成复用原则  2、设计模式1、创建型模式 工厂方法模型  抽象工厂模式  单例模式 饿汉式单例 懒汉式单例  建造者模式  原型模式   2、结构型模式 适配器模式 装饰者模式 代理模式 外观模式 桥接模式 组合模式 享元模式  3、行为型模式 策略模式 模板模式 观察者模式 迭代子模式 责任链模式">
-<meta name="keywords" content="设计模式">
+  <meta name="description" content="生活需要沉思，知识需要积淀，想法需要记录。希望用它来记录所学、所感、所想。">
+<meta name="keywords" content="JAVA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="设计模式">
-<meta property="og:url" content="https://linbingxing.github.io/2019/09/07/设计模式原则/index.html">
+<meta property="og:title" content="重拾JAVA（1）-基本类型">
+<meta property="og:url" content="https://linbingxing.github.io/2019/10/23/重拾JAVA（1）-基本类型/index.html">
 <meta property="og:site_name" content="菜饼的博客">
-<meta property="og:description" content="1、软件设计原则 开闭原则 单一职责原则 依赖倒置原则 接口隔离原则 迪米特法则 里氏替换原则 合成复用原则  2、设计模式1、创建型模式 工厂方法模型  抽象工厂模式  单例模式 饿汉式单例 懒汉式单例  建造者模式  原型模式   2、结构型模式 适配器模式 装饰者模式 代理模式 外观模式 桥接模式 组合模式 享元模式  3、行为型模式 策略模式 模板模式 观察者模式 迭代子模式 责任链模式">
+<meta property="og:description" content="生活需要沉思，知识需要积淀，想法需要记录。希望用它来记录所学、所感、所想。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-07T15:05:42.849Z">
+<meta property="og:updated_time" content="2019-10-23T01:07:10.728Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="设计模式">
-<meta name="twitter:description" content="1、软件设计原则 开闭原则 单一职责原则 依赖倒置原则 接口隔离原则 迪米特法则 里氏替换原则 合成复用原则  2、设计模式1、创建型模式 工厂方法模型  抽象工厂模式  单例模式 饿汉式单例 懒汉式单例  建造者模式  原型模式   2、结构型模式 适配器模式 装饰者模式 代理模式 外观模式 桥接模式 组合模式 享元模式  3、行为型模式 策略模式 模板模式 观察者模式 迭代子模式 责任链模式">
-  <link rel="canonical" href="https://linbingxing.github.io/2019/09/07/设计模式原则/">
+<meta name="twitter:title" content="重拾JAVA（1）-基本类型">
+<meta name="twitter:description" content="生活需要沉思，知识需要积淀，想法需要记录。希望用它来记录所学、所感、所想。">
+  <link rel="canonical" href="https://linbingxing.github.io/2019/10/23/重拾JAVA（1）-基本类型/">
 
 
 <script id="page-configurations">
@@ -81,7 +81,7 @@
   };
 </script>
 
-  <title>设计模式 | 菜饼的博客</title>
+  <title>重拾JAVA（1）-基本类型 | 菜饼的博客</title>
   
 
 
@@ -196,7 +196,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://linbingxing.github.io/2019/09/07/设计模式原则/">
+    <link itemprop="mainEntityOfPage" href="https://linbingxing.github.io/2019/10/23/重拾JAVA（1）-基本类型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lin BingXing">
@@ -208,7 +208,7 @@
       <meta itemprop="name" content="菜饼的博客">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">设计模式
+        <h1 class="post-title" itemprop="name headline">重拾JAVA（1）-基本类型
 
           
         </h1>
@@ -224,7 +224,7 @@
                 
               
 
-              <time title="创建时间：2019-09-07 22:33:17 / 修改时间：23:05:42" itemprop="dateCreated datePublished" datetime="2019-09-07T22:33:17+08:00">2019-09-07</time>
+              <time title="创建时间：2019-10-23 09:02:58 / 修改时间：09:07:10" itemprop="dateCreated datePublished" datetime="2019-10-23T09:02:58+08:00">2019-10-23</time>
             </span>
           
             
@@ -237,7 +237,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/软件设计/" itemprop="url" rel="index"><span itemprop="name">软件设计</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/重拾JAVA/" itemprop="url" rel="index"><span itemprop="name">重拾JAVA</span></a></span>
 
                 
                 
@@ -256,52 +256,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="1、软件设计原则"><a href="#1、软件设计原则" class="headerlink" title="1、软件设计原则"></a>1、软件设计原则</h1><ol>
-<li>开闭原则</li>
-<li>单一职责原则</li>
-<li>依赖倒置原则</li>
-<li>接口隔离原则</li>
-<li>迪米特法则</li>
-<li>里氏替换原则</li>
-<li>合成复用原则</li>
-</ol>
-<h1 id="2、设计模式"><a href="#2、设计模式" class="headerlink" title="2、设计模式"></a>2、设计模式</h1><h2 id="1、创建型模式"><a href="#1、创建型模式" class="headerlink" title="1、创建型模式"></a>1、创建型模式</h2><ul>
-<li><p>工厂方法模型</p>
-</li>
-<li><p>抽象工厂模式</p>
-</li>
-<li><p>单例模式</p>
-<p>饿汉式单例</p>
-<p>懒汉式单例</p>
-</li>
-<li><p>建造者模式</p>
-</li>
-<li><p>原型模式</p>
-</li>
-</ul>
-<h2 id="2、结构型模式"><a href="#2、结构型模式" class="headerlink" title="2、结构型模式"></a>2、结构型模式</h2><ul>
-<li>适配器模式</li>
-<li>装饰者模式</li>
-<li>代理模式</li>
-<li>外观模式</li>
-<li>桥接模式</li>
-<li>组合模式</li>
-<li>享元模式</li>
-</ul>
-<h2 id="3、行为型模式"><a href="#3、行为型模式" class="headerlink" title="3、行为型模式"></a>3、行为型模式</h2><ul>
-<li>策略模式</li>
-<li>模板模式</li>
-<li>观察者模式</li>
-<li>迭代子模式</li>
-<li>责任链模式</li>
-<li>命令模式</li>
-<li>备忘录模式</li>
-<li>状态模式</li>
-<li>访问者模式</li>
-<li>中介者模式</li>
-<li>解释器模式</li>
-</ul>
-
+        
     </div>
 
     
@@ -316,7 +271,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/设计模式/" rel="tag"># 设计模式</a>
+              <a href="/tags/JAVA/" rel="tag"># JAVA</a>
             
           </div>
         
@@ -326,8 +281,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/09/07/hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
+                <a href="/2019/09/08/了解Redis知识（三）/" rel="next" title="了解Redis知识（三）">
+                  <i class="fa fa-chevron-left"></i> 了解Redis知识（三）
                 </a>
               
             </div>
@@ -336,8 +291,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/09/08/单例模式/" rel="prev" title="单例模式">
-                  单例模式 <i class="fa fa-chevron-right"></i>
+                <a href="/2019/10/23/重拾JAVA-序章/" rel="prev" title="重拾JAVA-序章">
+                  重拾JAVA-序章 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -387,8 +342,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、软件设计原则"><span class="nav-number">1.</span> <span class="nav-text">1、软件设计原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2、设计模式"><span class="nav-number">2.</span> <span class="nav-text">2、设计模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、创建型模式"><span class="nav-number">2.1.</span> <span class="nav-text">1、创建型模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、结构型模式"><span class="nav-number">2.2.</span> <span class="nav-text">2、结构型模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、行为型模式"><span class="nav-number">2.3.</span> <span class="nav-text">3、行为型模式</span></a></li></ol></li></ol></div>
-        
       </div>
       <!--/noindex-->
 
