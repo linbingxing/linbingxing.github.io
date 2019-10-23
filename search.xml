@@ -33,7 +33,7 @@
       <link href="/2019/10/23/%E9%87%8D%E6%8B%BEJAVA%EF%BC%881%EF%BC%89-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/"/>
       <url>/2019/10/23/%E9%87%8D%E6%8B%BEJAVA%EF%BC%881%EF%BC%89-%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<p>Java 支持的数据类型包括基本数据类型和引用类型。</p><p><strong>基本数据</strong>类型如下：</p><ul><li>整数值型：<code>byte(8)</code>、<code>short(16)</code>、<code>int(32)</code>、<code>long(64)</code></li><li>字符型：<code>char(16)</code></li><li>浮点类型：<code>float(32)</code>、<code>double(64)</code></li><li>布尔型：<code>boolean</code> , 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数据转换为 int，使用 1 来表示 true，0 表示 false。JVM 支持 boolean 数组，但是是通过读写 byte 数组来实现的。</li><li>整数型：默认 <code>int</code> 型，小数默认是 <code>double</code> 型。Float 和 Long 类型的必须加后缀。比如：<code>float f = 100f</code> 。</li></ul><p><strong>引用类型</strong>声明的变量是指该变量在内存中实际存储的是一个引用地址，实体在堆中。</p><ul><li>引用类型包括类、接口、数组等。</li><li>特别注意，String 是引用类型不是基本类型。</li></ul>]]></content>
       
       
       <categories>

@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="生活需要沉思，知识需要积淀，想法需要记录。">
+    <meta name="description" content="Java 支持的数据类型包括基本数据类型和引用类型。 基本数据类型如下：  整数值型：byte(8)、short(16)、int(32)、long(64) 字符型：char(16) 浮点类型：float(32)、double(64) 布尔型：boolean , 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数">
 <meta name="keywords" content="JAVA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="重拾JAVA（1）-基本类型">
 <meta property="og:url" content="https://linbingxing.github.io/2019/10/23/重拾JAVA（1）-基本类型/index.html">
 <meta property="og:site_name" content="CaiBlog">
-<meta property="og:description" content="生活需要沉思，知识需要积淀，想法需要记录。">
+<meta property="og:description" content="Java 支持的数据类型包括基本数据类型和引用类型。 基本数据类型如下：  整数值型：byte(8)、short(16)、int(32)、long(64) 字符型：char(16) 浮点类型：float(32)、double(64) 布尔型：boolean , 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-23T01:07:10.728Z">
+<meta property="og:updated_time" content="2019-10-23T02:10:51.409Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="重拾JAVA（1）-基本类型">
-<meta name="twitter:description" content="生活需要沉思，知识需要积淀，想法需要记录。">
+<meta name="twitter:description" content="Java 支持的数据类型包括基本数据类型和引用类型。 基本数据类型如下：  整数值型：byte(8)、short(16)、int(32)、long(64) 字符型：char(16) 浮点类型：float(32)、double(64) 布尔型：boolean , 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数">
     
     
         
@@ -164,7 +164,21 @@
   
 
   <div class="content" itemprop="articleBody">
-    
+    <p>Java 支持的数据类型包括基本数据类型和引用类型。</p>
+<p><strong>基本数据</strong>类型如下：</p>
+<ul>
+<li>整数值型：<code>byte(8)</code>、<code>short(16)</code>、<code>int(32)</code>、<code>long(64)</code></li>
+<li>字符型：<code>char(16)</code></li>
+<li>浮点类型：<code>float(32)</code>、<code>double(64)</code></li>
+<li>布尔型：<code>boolean</code> , 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数据转换为 int，使用 1 来表示 true，0 表示 false。JVM 支持 boolean 数组，但是是通过读写 byte 数组来实现的。</li>
+<li>整数型：默认 <code>int</code> 型，小数默认是 <code>double</code> 型。Float 和 Long 类型的必须加后缀。比如：<code>float f = 100f</code> 。</li>
+</ul>
+<p><strong>引用类型</strong>声明的变量是指该变量在内存中实际存储的是一个引用地址，实体在堆中。</p>
+<ul>
+<li>引用类型包括类、接口、数组等。</li>
+<li>特别注意，String 是引用类型不是基本类型。</li>
+</ul>
+
   </div>
 </article>
 
